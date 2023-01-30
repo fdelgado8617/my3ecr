@@ -1,0 +1,1265 @@
+{
+    "roles": [
+        {
+            "id": 4,
+            "oid": "STU",
+            "title": "Student",
+            "signin": false,
+            "emailRegex": "^.+@ecrchs.org$"
+        },
+        {
+            "id": 1,
+            "oid": "TCH",
+            "title": "Teacher",
+            "signin": true,
+            "emailRegex": "^(?!sub.).+@ecrchs.net$"
+        },
+        {
+            "id": 5,
+            "oid": "PAR",
+            "title": "Parent / Guardian",
+            "signin": false,
+            "emailRegex": ""
+        },
+        {
+            "id": 2,
+            "oid": "STF",
+            "title": "Staff",
+            "signin": true,
+            "emailRegex": "^(?!sub.).+@ecrchs.net$"
+        },
+        {
+            "id": 3,
+            "oid": "SUB",
+            "title": "Substitute Teacher",
+            "signin": true,
+            "emailRegex": "^.+@ecrchs.net$"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "oid": "FEA",
+            "title": "Featured"
+        },
+        {
+            "id": 2,
+            "oid": "PRO",
+            "title": "Productivity"
+        },
+        {
+            "id": 3,
+            "oid": "ECR",
+            "title": "ECR Apps"
+        },
+        {
+            "id": 4,
+            "oid": "FRM",
+            "title": "Forms"
+        },
+        {
+            "id": 5,
+            "oid": "INS",
+            "title": "Instruction"
+        },
+        {
+            "id": 6,
+            "oid": "PAR",
+            "title": "Parent Center"
+        },
+        {
+            "id": 7,
+            "oid": "OFF",
+            "title": "Offices"
+        }
+    ],
+    "alerts": [
+        {
+            "id": 0,
+            "title": "Sample Alert Title",
+            "body": "This is a sample alert body",
+            "start": "2022-04-01 0:00",
+            "end": "2022-04-01 23:59 PM",
+            "roles": ["STU", "TCH", "STF", "SUB", "PAR"]
+        },
+        {
+            "id": 0,
+            "md": "#### **Sample Alert Markdown Title** \n Samlpe Markdown Body  [Sample link](#)  \n Sample text on new line (two spaces followed by newline character)",
+            "start": "2022-04-01 0:00",
+            "end": "2022-04-01 13:59"
+        },
+        {
+            "id": 0,
+            "title": "Instructions",
+            "body": "Below are instructions for using alerts",
+            "md": "1. Create a new JSON object with an id, start, and end. \n 2. You may use any combination of the title, body, and md fields. \n 3. The roles array is optional \n 4. Two spaces followed by the newline character will create a line break in your text when using markdown.",
+            "start": "2022-04-01 0:00",
+            "end": "2022-04-01 13:59"
+        },
+        {
+            "id": 1,
+            "md": "#### **Welcome to the new MyECR**  \n We are still working on setting up a few apps!  Links to access GoTo and Kelly will redirect you to [sso.ecrchs.net](https://sso.ecrchs.net).  \n Encounter an issue or have feedback?  [Click here](https://docs.google.com/forms/d/e/1FAIpQLSd26tpoYyeeZR8-VbUSsHyG4YvkX1mpq5X7VerMlTTL0fEaLA/viewform?usp=sf_link) to access the feedback form.",
+            "start": "2022-04-05 4:50",
+            "end": "2022-06-03 23:59"
+        },
+        {
+            "id": 2,
+            "md": "#### **Aeries is experiencing issues** \n Please be aware that Aeries may be slow today.",
+            "start": "2022-04-05 00:00",
+            "end": "2022-04-06 13:00",
+            "roles": ["TCH", "STF"]
+        },
+        {
+            "id": 3,
+            "title": "Student Equity Survey",
+            "md": "Please [click here](#) to take the survey.",
+            "start": "2022-04-05 00:00",
+            "end": "2022-04-08 16:00",
+            "roles": ["STU"]
+        },
+        {
+            "id": 4,
+            "md": "#### **Welcome to the new MyECR**  \n Encounter an issue or have feedback?  [Click here](https://docs.google.com/forms/d/e/1FAIpQLSd26tpoYyeeZR8-VbUSsHyG4YvkX1mpq5X7VerMlTTL0fEaLA/viewform?usp=sf_link) to access the feedback form.",
+            "start": "2022-06-22 9:00",
+            "end": "2022-07-29 13:59"
+        },
+        {
+            "id": 5,
+            "title": "Spirit Week (8/22/2022 - 8/26/2022)",
+            "body": "M: Minion Monday | T: Country vs. Country Club | W: Surfer vs. Skater | Th: Red Flag Thursday | F: Class Colors",
+            "start": "2022-08-22 0:00",
+            "end": "2022-08-26 23:59"
+        },
+        {
+            "id": 6,
+            "title": "PSAT Sign Up",
+            "body": "The PSAT is a preparatory version of the SAT exam.  You may receive a National Merit Scholarship if you earn a high score on the PSAT during your Junior year.  The PSAT will be held at ECRCHS on Saturday, October 15, 2022 from 8am - 1pm.  Sign ups close on September 9.",
+            "md": "[Click here](https://docs.google.com/forms/d/e/1FAIpQLSdTcfnpnfhrkBWfoIQ9XeDoaCKHTNEskP6AGkYQgu5BOEmTkg/viewform?usp=pp_url) to sign up.  [Click here](https://satsuite.collegeboard.org/psat-nmsqt) for more information.",
+            "start": "2022-08-29 0:00",
+            "end": "2022-09-09 23:59",
+            "roles": ["STU", "PAR"]
+        },
+        {
+            "id": 7,
+            "title": "The Solution 2022 Food Donation Drive 11/7-11/17",
+            "body": "The Solution 2022 Food Donation Drive will be running from November 7 through November 17. Drop off items in S-1 or H-2.",
+            "md": "[Click here](https://drive.google.com/file/d/1ghT_HYP58eGNVD4rlKlZbzrFyRTJjiqE/view?usp=sharing) for more information on what items are most needed.",
+            "start": "2022-11-03 0:00",
+            "end": "2022-11-17 23:59"
+        },
+        {
+            "id": 8,
+            "title": "Email transitioning from Gmail to Outlook on 11/17",
+            "body": "For all users that have an ECR provided email account, this is notify you that there will be a change in how you access your email.\nBeginning on November 17 the email client ECRCHS uses will transition to Microsoft Outlook, meaning you will no longer be able to access your email through Gmail.\nYour email address will remain the same, the only change for you is the email client that you will use.",
+            "md": "[Click here](https://youtu.be/KQcdtzINM0c) for more information about the email migration.",
+            "start": "2022-11-10 0:00",
+            "end": "2022-11-16 23:59"
+        }
+    ],
+    "cards": [
+        {
+            "title": "Adobe",
+            "icon": "./icon/Adobe.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access the Adobe Creative Cloud - enter your email to sign in",
+                    "url": "https://account.adobe.com/",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Access the Adobe Creative Cloud - enter your email to sign in",
+                    "url": "https://account.adobe.com/",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Access the Adobe Creative Cloud - enter your email to sign in",
+                    "url": "https://account.adobe.com/",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "Aeries",
+            "icon": "./icon/Aeries.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access your grades, attendance, and more",
+                    "url": "https://elcaminoreal.asp.aeries.net/student/LoginParent.aspx",
+                    "category": ["FEA", "INS"]
+                },
+                "TCH": {
+                    "description": "View student information, grades, and attendance",
+                    "url": "https://elcaminoreal.asp.aeries.net/teacher/Login.aspx",
+                    "category": ["FEA", "INS"]
+                },
+                "STF": {
+                    "description": "Admin view for Aeries",
+                    "url": "https://elcaminoreal.asp.aeries.net/admin/Login.aspx",
+                    "category": ["FEA", "INS"]
+                },
+                "SUB": {
+                    "description": "Log in with your substitute teacher's credentials to take attendance",
+                    "url": "https://elcaminoreal.asp.aeries.net/teacher/Login.aspx",
+                    "category": ["FEA", "INS"]
+                },
+                "PAR": {
+                    "description": "View your student's grades, attendance, and more",
+                    "url": "https://elcaminoreal.asp.aeries.net/student/LoginParent.aspx",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "Albert",
+            "icon": "./icon/Albert.jpg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://api.albert.io/auth/google?redirectUri=https://www.albert.io/social",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://api.albert.io/auth/google?redirectUri=https://www.albert.io/social",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Attendance Portal",
+            "icon": "./icon/apx_general_events_app_1.png",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "https://ecrchs.schoolriver.com",
+                    "category": ["FEA", "ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://ecrchs.schoolriver.com",
+                    "category": ["FEA", "ECR"]
+                },
+                "SUB": {
+                    "description": "",
+                    "url": "https://ecrchs.schoolriver.com",
+                    "category": ["FEA", "ECR"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "http://attendance.ecrchs.net/",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "CAASPP",
+            "icon": "./icon/CAASPP-logo-no-text.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "California Assessment of Student Performance and Progress, Smarter Balanced Assessment",
+                    "url": "https://login1.cloud1.tds.cambiumast.com/student/V584/Pages/LoginShell.aspx?c=California",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "California Assessment of Student Performance and Progress, Smarter Balanced Assessment",
+                    "url": "https://login1.cloud1.tds.cambiumast.com/student/V584/Pages/LoginShell.aspx?c=California",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Canva",
+            "icon": "./icon/Canva.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access Canva - enter your email to sign in",
+                    "url": "https://myapps.microsoft.com/signin/ca846750-9476-450e-b1db-211f9a05431b?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Access Canva - enter your email to sign in",
+                    "url": "https://myapps.microsoft.com/signin/ca846750-9476-450e-b1db-211f9a05431b?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Access Canva - enter your email to sign in",
+                    "url": "https://myapps.microsoft.com/signin/ca846750-9476-450e-b1db-211f9a05431b?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "Canvas",
+            "icon": "./icon/Canvas.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "View daily agendas, complete assignments, and take assessments",
+                    "url": "https://ecrchs.instructure.com/login/saml",
+                    "category": ["FEA", "INS"]
+                },
+                "TCH": {
+                    "description": "Create assignments and assessments",
+                    "url": "https://ecrchs.instructure.com/login/saml",
+                    "category": ["FEA", "INS"]
+                },
+                "STF": {
+                    "description": "View Canvas courses",
+                    "url": "https://ecrchs.instructure.com/login/saml",
+                    "category": ["FEA", "INS"]
+                },
+                "SUB": {
+                    "description": "View Canvas courses",
+                    "url": "https://ecrchs.instructure.com/login/saml",
+                    "category": ["FEA", "INS"]
+                },
+                "PAR": {
+                    "description": "View your student's progress in class",
+                    "url": "https://ecrchs.instructure.com/login/canvas",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "Cyber High",
+            "icon": "./icon/CyberHigh.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://world.cyberhigh.org/",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://world.cyberhigh.org/",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "ECR Board",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "PAR": {
+                    "description": "View the ECR Board Agenda, Meeting Dates, Charter Documents, and more",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370005&type=d&pREC_ID=712865",
+                    "category": ["OFF"]
+                },
+                "STU": {
+                    "description": "View the ECR Board Agenda, Meeting Dates, Charter Documents, and more",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370005&type=d&pREC_ID=712865",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
+            "title": "Edpuzzle",
+            "icon": "./icon/Edpuzzle.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "Set up Edpuzzle for your class",
+                    "url": "https://edpuzzle.com/",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Friends of ECR PTO",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "PAR": {
+                    "description": "",
+                    "url": "https://www.friendsofecr.com/",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
+            "title": "ERP",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "https://purchasing.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://purchasing.ecrchs.net",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Flipgrid",
+            "icon": "./icon/Flipgrid.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "View Flipgrid for your class",
+                    "url": "https://login.microsoftonline.com/common/adminconsent?client_id=f1143447-b07a-4557-b878-b78df8d45c13&redirect_uri=https://flipgrid.com/auth/sso&scope=User.Read&state=eyJncmlkX2lkIjo1Nzk1NDcsInJlZGlyZWN0X3RvIjoiLzQ2MjQxZD9hdj0xJnJlbWVtYmVyPWZhbHNlIiwiZ3JpZF90b2tlbiI6bnVsbCwicHJvdmlkZXIiOiJtaWNyb3NvZnQifQ",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "Set up Edpuzzle for your class",
+                    "url": "https://auth.flipgrid.com/educator",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Google Drive",
+            "icon": "./icon/Gdrive.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access your Google Drive files",
+                    "url": "https://drive.google.com/a/ecrchs.net",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Access your Google Drive files",
+                    "url": "https://drive.google.com/a/ecrchs.net",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Access your Google Drive files",
+                    "url": "https://drive.google.com/a/ecrchs.net",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "ECR Email",
+            "icon": "./icon/Gmail.webp",
+            "priority": true,
+            "roles": {
+
+            }
+        },
+        {
+            "title": "Intervention Referral Form",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "https://docs.google.com/forms/d/e/1FAIpQLSd7l9Om0FQFdldc4CvmthHXZKjzq3pmuG2roWTa5Wl-QawPlQ/viewform",
+                    "category": ["FRM"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://docs.google.com/forms/d/e/1FAIpQLSd7l9Om0FQFdldc4CvmthHXZKjzq3pmuG2roWTa5Wl-QawPlQ/viewform",
+                    "category": ["FRM"]
+                }
+            }
+        },
+        {
+            "title": "Dean's Office Referral Form",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "https://docs.google.com/forms/d/e/1FAIpQLSdzciG_4h3cpMeW4y3JBOAFXPD98wuhetl2s8EBLy8VAv1sSA/viewform",
+                    "category": ["FRM"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://docs.google.com/forms/d/e/1FAIpQLSdzciG_4h3cpMeW4y3JBOAFXPD98wuhetl2s8EBLy8VAv1sSA/viewform",
+                    "category": ["FRM"]
+                }
+            }
+        },
+        {
+            "title": "Gimkit",
+            "icon": "./icon/Gimkit.jpg",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "Open Gimkit, use the link on the Staff Intranet to activate your Pro Licence",
+                    "url": "https://www.gimkit.com/login",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "GoTo Connect",
+            "icon": "./icon/GoTo.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "Access your phone on the go; make and receive phone calls from anywhere",
+                    "url": "https://myapps.microsoft.com/signin/d7ed3a07-ef6c-4f0d-b9f4-3db767d63c2e?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "Access your phone on the go; make and receive phone calls from anywhere",
+                    "url": "https://myapps.microsoft.com/signin/d7ed3a07-ef6c-4f0d-b9f4-3db767d63c2e?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Technology HelpDesk",
+            "icon": "./icon/helpdesk-icon-2.png",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "You can also email techsupport@ecrchs.net to create a ticket",
+                    "url": "https://help.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "You can also email techsupport@ecrchs.net to create a ticket",
+                    "url": "https://help.ecrchs.net",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Houghton Mifflin Harcourt",
+            "icon": "./icon/HMH.jpg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://papi.hmhco.com/login/initialize?iss=hmh-prod-4d233074-69ab-43c9-9e07-6e0f2aacf21b&idp=0oa1wvwmhtgcVdTsG697",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://papi.hmhco.com/login/initialize?iss=hmh-prod-4d233074-69ab-43c9-9e07-6e0f2aacf21b&idp=0oa1wvwmhtgcVdTsG697",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Intranet",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://sites.google.com/ecrchs.net/student",
+                    "category": ["FEA", "ECR"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://sites.google.com/ecrchs.net/staff",
+                    "category": ["FEA", "ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://sites.google.com/ecrchs.net/staff",
+                    "category": ["FEA", "ECR"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://sites.google.com/ecrchs.net/student/parent-center",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "Kahoot",
+            "icon": "./icon/Kahoot.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "https://create.kahoot.it/auth/login",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Kelly Services (Substitute Request)",
+            "icon": "./icon/kellyeducation_fullcolor_padding2.svg",
+            "priority": true,
+            "roles": {
+                
+            }
+        },
+        {
+            "title": "Khan Academy",
+            "icon": "./icon/KhanAcademy.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.khanacademy.org/login",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://www.khanacademy.org/login",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Live Chat Tech Office (8am-3pm)",
+            "icon": "./icon/LiveChat.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://tawk.to/ecrchs",
+                    "category": []
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://tawk.to/ecrchs",
+                    "category": []
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://tawk.to/ecrchs",
+                    "category": []
+                }
+            }
+        },
+        {
+            "title": "Loom",
+            "icon": "./icon/Loom.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Easily make and share screen recordings",
+                    "url": "https://www.loom.com/login",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Easily make and share screen recordings",
+                    "url": "https://www.loom.com/login",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Easily make and share screen recordings",
+                    "url": "https://www.loom.com/login",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "McGraw-Hill",
+            "icon": "./icon/MGH_Logo_RGB.svg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://myapps.microsoft.com/signin/d0a0104f-19ec-4df7-a0e6-af13241f71be?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://myapps.microsoft.com/signin/d0a0104f-19ec-4df7-a0e6-af13241f71be?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Microsoft Office Portal",
+            "icon": "./icon/MSOffice.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access your Microsoft Office files and applications",
+                    "url": "https://portal.office.com/",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Access your Microsoft Office files and applications",
+                    "url": "https://portal.office.com/",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Access your Microsoft Office files and applications",
+                    "url": "https://portal.office.com/",
+                    "category": ["PRO"]
+                },
+                "SUB": {
+                    "description": "Access your Microsoft Office files and applications",
+                    "url": "https://portal.office.com/",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "Microsoft Stream",
+            "icon": "./icon/MSstream.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://web.microsoftstream.com/",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://web.microsoftstream.com/",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://web.microsoftstream.com/",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "My MealTime",
+            "icon": "./icon/MyMealTime.webp",
+            "priority": true,
+            "roles": {
+                "PAR": {
+                    "description": "Complete your free/reduced application or deposit funds in your meal account.",
+                    "url": "https://www.mymealtime.com/",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "Naviance",
+            "icon": "./icon/Naviance_powerschool_w_tagline-5916c.svg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://myapps.microsoft.com/signin/cefc1de8-8b7d-484d-9eb7-ca8b5ddeb907?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["INS", "FEA"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://myapps.microsoft.com/signin/a69024ac-15a4-4350-ae95-0465c797d08d?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["INS"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://myapps.microsoft.com/signin/a69024ac-15a4-4350-ae95-0465c797d08d?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Nearpod",
+            "icon": "./icon/Nearpod.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://nearpod.com/student/",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://login.microsoftonline.com/common/oauth2/authorize?client_id=7b77b3a2-8490-49e1-8842-207cd0899af9&redirect_uri=https%3A%2F%2Fapp.nearpod.com%2Fct%2Factions%2Fuser%2Foffice365Login.php&resource=https://graph.windows.net+&response_type=code&state=20c13bf9723e0aa60a5a74ff8a1b6888&msafed=0&sso_reload=true",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "NetSuite",
+            "icon": "./icon/NetSuite.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "https://myapps.microsoft.com/signin/2787618c-b957-4077-a6be-3d77b0817d41?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://myapps.microsoft.com/signin/2787618c-b957-4077-a6be-3d77b0817d41?tenantId=3103011a-6832-4e4a-be24-2aac2968b4dc",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Newsela",
+            "icon": "./icon/Newsela.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://newsela.com/join/#/classcode",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=7fcc99cb-6f28-4982-924d-7237a70f7050&redirect_uri=https://newsela.com/complete/microsoft-oauth2/&state=auDEUccKvrMrELtYZL4zHgjUV9eOmpt0&response_type=code&scope=openid+offline_access+User.Read",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "NEWA",
+            "icon": "./icon/NWEA.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://test.mapnwea.org",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://teach.mapnwea.org",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "OneDrive",
+            "icon": "./icon/OneDrive.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Access your files on any internet connected device",
+                    "url": "https://ecrchs-my.sharepoint.com/",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "Access your files on any internet connected device",
+                    "url": "https://ecrchs-my.sharepoint.com/",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "Access your files on any internet connected device",
+                    "url": "https://ecrchs-my.sharepoint.com/",
+                    "category": ["PRO"]
+                },
+                "SUB": {
+                    "description": "Access your files on any internet connected device",
+                    "url": "https://ecrchs-my.sharepoint.com/",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "OneNote",
+            "icon": "./icon/OneNote.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.office.com/launch/onenote",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://www.office.com/launch/onenote",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://www.office.com/launch/onenote",
+                    "category": ["PRO"]
+                },
+                "SUB": {
+                    "description": "",
+                    "url": "https://www.office.com/launch/onenote",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "Outlook Email",
+            "icon": "./icon/outlook_icon.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Outlook Email",
+                    "url": "https://outlook.office.com/mail/",
+                    "category": ["PRO", "FEA"]
+                },
+                "TCH": {
+                    "description": "Outlook Email",
+                    "url": "https://outlook.office.com/mail/",
+                    "category": ["PRO", "FEA"]
+                },
+                "STF": {
+                    "description": "Outlook Email",
+                    "url": "https://outlook.office.com/mail/",
+                    "category": ["PRO", "FEA"]
+                }
+            }
+        },
+        {
+            "title": "Padlet",
+            "icon": "./icon/Padlet.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=ecc86b71-0d37-4144-8cbe-bebf3169a99a&redirect_uri=https%3A%2F%2Fpadlet.com%2Fauth%2Fms_graph%2Fcallback&response_mode=query&response_type=code&scope=openid+email+profile+https%3A%2F%2Fgraph.microsoft.com%2FUser.Read&state=eyJhbGciOiJIUzI1NiJ9.eyJ0ZW5hbnRfaWQiOiI2MDkwMyIsIm9yaWdpbiI6ImxvZ2luIiwiaXNzIjoiaHR0cHM6Ly9wYWRsZXQuY29tIn0.zrJo2Dve8ODARpp-7zTwEPrcjpWND5hM6KD3FLfilq8&tenant_id=60903",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=ecc86b71-0d37-4144-8cbe-bebf3169a99a&redirect_uri=https%3A%2F%2Fpadlet.com%2Fauth%2Fms_graph%2Fcallback&response_mode=query&response_type=code&scope=openid+email+profile+https%3A%2F%2Fgraph.microsoft.com%2FUser.Read&state=eyJhbGciOiJIUzI1NiJ9.eyJ0ZW5hbnRfaWQiOiI2MDkwMyIsIm9yaWdpbiI6ImxvZ2luIiwiaXNzIjoiaHR0cHM6Ly9wYWRsZXQuY29tIn0.zrJo2Dve8ODARpp-7zTwEPrcjpWND5hM6KD3FLfilq8&tenant_id=60903",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Paycom",
+            "icon": "./icon/Paycom.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "View your timesheets, payroll, HR information, and more",
+                    "url": "https://www.paycomonline.net/v4/ee/web.php/sso/index/0VF03",
+                    "category": ["FEA", "ECR"]
+                },
+                "STF": {
+                    "description": "View your timesheets, payroll, HR information, and more",
+                    "url": "https://www.paycomonline.net/v4/ee/web.php/sso/index/0VF03",
+                    "category": ["FEA", "ECR"]
+                }
+            }
+        },
+        {
+            "title": "Paycom Admin",
+            "icon": "./icon/PaycomAdmin.png",
+            "priority": true,
+            "roles": {
+                "STF": {
+                    "description": "",
+                    "url": "https://www.paycomonline.net/v4/cl/web.php/sso/index/0VF03",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Peardeck",
+            "icon": "./icon/Peardeck.jpg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://app.peardeck.com/join",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://app.peardeck.com/authPicker?finalDestinationUrl=%2Fhome%2F%3Faction%3Dsignin",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Password Reset",
+            "icon": "./icon/reset-password-icon-29.jpg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "Change your MyECR account password",
+                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "category": ["FEA", "ECR"]
+                },
+                "TCH": {
+                    "description": "Change your MyECR account password",
+                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "Change your MyECR account password",
+                    "url": "https://account.activedirectory.windowsazure.com/ChangePassword.aspx",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Quizlet",
+            "icon": "./icon/Quizlet.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://quizlet.com/google-oauth-redirector?from=https%3A%2F%2Fquizlet.com%2F&customParams=%7B%22signupOrigin%22%3A%22global-signup-modal-google%22%2C%22screenName%22%3A%22Homepage%2Findex%22%7D",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://quizlet.com/google-oauth-redirector?from=https%3A%2F%2Fquizlet.com%2F&customParams=%7B%22signupOrigin%22%3A%22global-signup-modal-google%22%2C%22screenName%22%3A%22Homepage%2Findex%22%7D",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "* RoyalPass",
+            "icon": "./icon/undraw_medicine_b-1-ol.svg",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://royalpass.ecrchs.net/",
+                    "category": ["FEA", "ECR"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://royalpass.ecrchs.net/",
+                    "category": ["FEA", "ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://royalpass.ecrchs.net/",
+                    "category": ["FEA", "ECR"]
+                },
+                "SUB": {
+                    "description": "",
+                    "url": "https://royalpass.ecrchs.net/",
+                    "category": ["FEA", "ECR"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://royalpass.ecrchs.net/",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "SpringBoard",
+            "icon": "./icon/SpringBoard.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://elcaminorealcharterhighschoolca.springboardonline.org/",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://elcaminorealcharterhighschoolca.springboardonline.org/",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "SRM",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "",
+                    "url": "http://srm.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "http://srm.ecrchs.net",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Microsoft Teams",
+            "icon": "./icon/Teams.webp",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://teams.microsoft.com/",
+                    "category": ["PRO"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://teams.microsoft.com/",
+                    "category": ["PRO"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://teams.microsoft.com/",
+                    "category": ["PRO"]
+                },
+                "SUB": {
+                    "description": "",
+                    "url": "https://teams.microsoft.com/",
+                    "category": ["PRO"]
+                }
+            }
+        },
+        {
+            "title": "Textbook Portal",
+            "icon": "./icon/textbooks_helloID.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "http://textbooks.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://tportal.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "",
+                    "url": "https://tportal.ecrchs.net",
+                    "category": ["ECR"]
+                },
+                "PAR": {
+                    "description": "View textbook statuses and fees/fines.",
+                    "url": "http://textbooks.ecrchs.net",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "Vector Solutions - TeachPoint",
+            "icon": "./icon/TP-with-VS.webp",
+            "priority": true,
+            "roles": {
+                "TCH": {
+                    "description": "TeachPoint Evaluation",
+                    "url": "https://tp1.goteachpoint.com/sso/login?district=ecrchs",
+                    "category": ["ECR"]
+                },
+                "STF": {
+                    "description": "TeachPoint Evaluation",
+                    "url": "https://tp1.goteachpoint.com/sso/login?district=ecrchs",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Verkada",
+            "icon": "./icon/Verkada.webp",
+            "priority": true,
+            "roles": {
+                "STF": {
+                    "description": "",
+                    "url": "https://vauth.command.verkada.com/saml/login/elco",
+                    "category": ["ECR"]
+                }
+            }
+        },
+        {
+            "title": "Whiteboard.fi",
+            "icon": "./icon/Whiteboardfi.png",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://whiteboard.fi",
+                    "category": ["INS"]
+                },
+                "TCH": {
+                    "description": "",
+                    "url": "https://whiteboard.fi",
+                    "category": ["INS"]
+                }
+            }
+        },
+        {
+            "title": "Laptop Contract & Insurance",
+            "icon": "./icon/LaptopContract.jpg",
+            "priority": true,
+            "roles": {
+                "PAR": {
+                    "description": "Complete the ECRCHS Laptop Contract and Purchase our Optional Protection Plan",
+                    "url": "https://portal.ecrchs.net/",
+                    "category": ["PAR"]
+                }
+            }
+        },
+        {
+            "title": "Attendance Office",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369931&type=d",
+                    "category": ["OFF"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369931&type=d",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
+            "title": "Cafeteria",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369938&type=d&termREC_ID=&pREC_ID=756992",
+                    "category": ["OFF"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369938&type=d&termREC_ID=&pREC_ID=756992",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
+            "title": "College Office",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369999&type=d",
+                    "category": ["OFF"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=369999&type=d",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
+            "title": "Counseling Office",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370000&type=d",
+                    "category": ["OFF"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370000&type=d",
+                    "category": ["OFF"]
+                }
+            }
+        },
+        {
+            "title": "Health Office",
+            "icon": "",
+            "priority": true,
+            "roles": {
+                "STU": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370002&type=d",
+                    "category": ["OFF"]
+                },
+                "PAR": {
+                    "description": "",
+                    "url": "https://www.ecrchs.net/apps/pages/index.jsp?uREC_ID=370002&type=d",
+                    "category": ["OFF"]
+                }
+            }
+        }
+        
+    ]
+}
